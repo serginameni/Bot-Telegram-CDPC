@@ -34,7 +34,6 @@ bot.set_update_listener(listener)
 @bot.message_handler(commands=['start'])
 def command_benvinguda(m):
     cid = m.chat.id
-    IDlist = f.read()
     if not str(cid) in usuaris:
         usuaris.append(str(cid))
         f.write(str(cid)+"\n") #Here the user's ID will be registered to the file with all the user's ID
